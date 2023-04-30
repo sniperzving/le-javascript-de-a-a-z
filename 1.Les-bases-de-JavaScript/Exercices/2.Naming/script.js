@@ -6,15 +6,23 @@
 
 */
 
-    // LET UsErNaMe = "John";     
-    // const _id = 99;
-    // let class = true;
-    // const isAdult = true;
-    // const $card = {name: "card", content: "Lorem ipsum"};
-    // let 1452 = 1452;
-    // const sum41 = "music";
+// LET UsErNaMe = "John";
+// Uncaught SyntaxError: Unexpected identifier 'UsErNaMe'
+let userName = "John";
 
+const _id = 99;
 
+// let class = true;
+// Uncaught SyntaxError: Unexpected token 'class'
+
+const isAdult = true;
+
+const $card = { name: "card", content: "Lorem ipsum" };
+
+// let 1452 = 1452;
+// Uncaught SyntaxError: Unexpected number
+
+const sum41 = "music";
 
 /* 
     2. Trouver un bon nom; 
@@ -37,29 +45,35 @@
 */
 
 //A.
-// = true;
-//B. 
-// = false;
+let isOnline = true;
+//B.
+let isModerator = false;
 //C.
-// = [2450,1850,4712,3254,2000,1578]
-//D. 
-/*
- = {
-    temperature : 27,
-    humidity: 45,
-    wind: 14
-}
-*/
-// E
-// = 4251
-// F
-// = "Vous ne pouvez pas faire ça"
-// G
-/* function xxx(){}*/
-// H
-/* function xxx(){}*/
-// I
-/* function xxx(){}*/
-// J
-/* function xxx(){}*/
+const salaries = [2450, 1850, 4712, 3254, 2000, 1578];
+//D.
+const currentWeather = {
+  temperature: 27,
+  humidity: 45,
+  wind: 14,
+};
 
+// E
+let scrollHeight = 4251;
+// F
+const alertMessage = "Vous ne pouvez pas faire ça";
+// G
+function getUserInfos(firstName, lastName) {
+  return `${firstName} ${lastName}`;
+}
+
+// console.log(getUserInfos("Ghiles", "CORP"));
+
+// H
+function isPersonAdult(age) {
+  if (age >= 18) return true;
+  else return false;
+}
+// I
+function createButton(){}
+// J
+function addAnimation(){}

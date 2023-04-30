@@ -8,5 +8,20 @@
     else{} est utilisé à la fin d'une suite de conditions, lorsqu'on veut exécuter une instruction pour l'ensemble des conditions restantes.
 */
 
+let age = 18;
 
+if (age >= 18) console.log("majeur");
+else if (age >= 0 && age < 18) console.log("Mineur");
 
+let role = "Admin";
+if (role === "Admin") {
+  console.log("Admin");
+} else if (role === "Employee") {
+  console.log("Employee");
+} else if (role === "Moderator") {
+  console.log("Moderator");
+}
+
+let isLogged = false;
+if (isLogged) console.log("Welcome");
+else console.log("Access denied");

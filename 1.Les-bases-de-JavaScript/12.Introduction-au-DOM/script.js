@@ -17,8 +17,11 @@
 
 */
 
-
-
+const title = document.querySelector("h1");
+/* console.log(title);
+console.dir(title); */
+title.textContent = "Le texte a été modifié";
+title.style.background = "crimson";
 
 /* 
   2. Le BOM pour Browser object model, est l'objet global.
@@ -33,4 +36,4 @@
 
   Et des APIs pratiques comme History pour gérer l'historique.
 */
-
+console.log(window);

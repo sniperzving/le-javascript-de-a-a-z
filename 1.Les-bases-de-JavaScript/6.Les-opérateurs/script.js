@@ -20,6 +20,13 @@
 
 */
 
+console.log(2+4);
+console.log(2-4);
+console.log((2)+(4));
+console.log(2*4);
+console.log(2/4);
+console.log(2%4);
+console.log(2**4);
 
 /* 
     2. Les opérateurs de comparaison.
@@ -32,6 +39,10 @@
     >=  Supérieur ou égal.
 */
 
+console.log(2 > 4);
+console.log(2 < 4);
+console.log(2 <! 4);
+console.log(2 >= 4);
 
 /* 
     3. Les opérateurs d'égalité.
@@ -44,7 +55,10 @@
     !==  Inégalité stricte.
 */
 
-
+console.log(2 == 4);
+console.log(2 != 4);
+console.log(2 === 4);
+console.log(2 !== 4);
 
 /* 
     4. Les opérateurs logiques.
@@ -56,6 +70,10 @@
     !  NON logique
 
 */
+
+console.log(true && false);
+console.log(true || false);
+console.log(!true);
 
 
 /* 
@@ -72,6 +90,20 @@
     *=, ex num *= 10 équivaut à num = num * 10 // 100
 
 */
+
+let num = 10;
+
+num++;
+console.log(num);
+num --;
+console.log(num);
+num +=20;
+console.log(num);
+num -=20;
+console.log(num);
+num *=20;
+console.log(num);
+
 
 
 

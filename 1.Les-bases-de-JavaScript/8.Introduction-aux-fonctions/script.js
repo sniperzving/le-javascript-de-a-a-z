@@ -17,12 +17,18 @@
   Ex : getResults()
 */
 
+function addition(a, b) {
+    return a+b;
+}
 
+console.log(addition(5, 5));
 
 // Les fonctions sont des objets, même si typeof retourne "function"
 
 // On appelle les functions des "first class objects", car on peut les exécuter.
 
+
+console.log(typeof addition);
 
 /* 
     2. Nommer une fonction.
@@ -56,4 +62,8 @@
 */
 
 
-const multiply = (a,b) => a * b;
+const multiply = (a,b) => {return a * b};
+// const multiply = (a,b) => a * b;
+
+console.log(multiply(5, 6));
+

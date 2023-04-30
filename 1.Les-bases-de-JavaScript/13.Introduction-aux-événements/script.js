@@ -6,3 +6,20 @@
 
 */
 
+const title = document.querySelector("h1");
+title.addEventListener("click", handleClick);
+
+function handleClick(event) {
+    
+    console.log(event);
+    console.log("Clicked");
+    // title.textContent = `${title.textContent}`+" a";
+    title.style.backgroundColor = "Crimson";
+}
+
+window.addEventListener("load", handleLoad);
+
+function handleLoad(event) {
+    console.log("Loaded!");
+    
+}

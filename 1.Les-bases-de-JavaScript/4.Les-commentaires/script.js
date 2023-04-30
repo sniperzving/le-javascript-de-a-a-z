@@ -1,11 +1,14 @@
 /* Les commentaires sur une ligne */
 
-
+// Lorem ipsus
 
 /* Les commentaires sur plusieurs lignes */
 
+/* const userName = "John";
+const userName = "John";
+const userName = "John"; */
 
-
+/*  */
 
 /* Raccourcis clavier */
 
