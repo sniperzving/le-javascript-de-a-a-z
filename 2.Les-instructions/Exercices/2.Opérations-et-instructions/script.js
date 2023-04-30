@@ -8,6 +8,9 @@
 
 const squareFeet = 100;
 
+
+console.log(squareFeet > 70 ? "Large": "Small/Medium");
+
 /* 
     2. Panique à la librairie.
 
@@ -28,3 +31,15 @@ const library = [
     price: 5
   }
 ]
+
+// for
+// for(let i = 0; i < library.length; i++) {
+//   library[i].price++;
+// }
+// console.log(library);
+
+// for...of
+for(const book of library){
+  book.price++;
+}
+console.log(library);
