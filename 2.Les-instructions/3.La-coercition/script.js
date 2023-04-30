@@ -4,3 +4,11 @@
 
 const nb1 = 150;
 const nb2 = "150";
+
+// Egalité simple 
+if(nb1 == nb2) 
+console.log("Instruction exécutée");
+
+// Egalité stricte
+if(nb1 === nb2) 
+console.log("Instruction exécutée");
