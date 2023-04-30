@@ -18,9 +18,16 @@ const passenger2 = {
   premium: false
 }
 
+console.log(passenger1.age >= 18? "Vrai" : "Faux");
 
+/* function isAdult(passenger) {
+  return passenger.age >= 18 ? true : false;
+} */
 
+// const isAdult = passenger => passenger.age >= 18 ? true : false;
+const isAdult = (passenger) => { return passenger.age >= 18 ? true : false;}
 
+console.log(isAdult(passenger1));
 
 // Attention, n'utilisez que les opérations pour des calculs courts.
 // On peut en effet les chaîner, ce qui donne un résultat affreux.
