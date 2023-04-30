@@ -13,3 +13,19 @@
 const nb1 = 200;
 const nb2 = 400;
 
+if(nb1 < nb2)
+console.log("Condition true, instructionb exécutée");
+
+
+if("abc") {
+    console.log("Test");
+}
+
+if(-999) {
+    console.log("Test");
+}
+
+let isLogged = false;
+if(isLogged || 10 === 10) {
+    console.log("Logged");
+}
