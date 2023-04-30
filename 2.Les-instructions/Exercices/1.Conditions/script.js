@@ -10,13 +10,20 @@
 */
 
 function weatherFeeling(temp) {
-
+  if (temp <= 10) {
+    console.log("Il fait froid");
+  } else if (temp > 10 && temp < 20) {
+    console.log("Il fait doux");
+  } else if (temp > 20) {
+    console.log("il fait chaud");
+  } else {
+    console.log("Veuillez saisir une bonne valeur!");
+  }
 }
 
-weatherFeeling(-15)
-weatherFeeling(42)
-weatherFeeling(5)
-
+weatherFeeling(-15);
+weatherFeeling(42);
+weatherFeeling(5);
 
 /* 
   2. Champions.
@@ -36,25 +43,29 @@ const player1 = {
   name: "Paul",
   goldenBall: 0,
   worldCup: 1,
-  nationalCup: 0
-}
+  nationalCup: 0,
+};
 const player2 = {
   name: "Max",
   goldenBall: 3,
   worldCup: 3,
-  nationalCup: 4
-}
+  nationalCup: 4,
+};
 const player3 = {
   name: "Adam",
   goldenBall: 0,
   worldCup: 0,
-  nationalCup: 1
+  nationalCup: 1,
+};
+
+function howGoodIsThatPlayer(player) {
+  if (player.worldCup >= 1 && player.goldenBall >= 2 && player.nationalCup >= 3)
+    console.log("Niveau exceptionnel");
+  else if (player.goldenBall >= 1 && player.nationalCup >= 1)
+    console.log("Bon niveau");
+  else console.log("Niveau médiocre");
 }
 
-
-function howGoodIsThatPlayer(player){
-
-}
-howGoodIsThatPlayer(player1)
-howGoodIsThatPlayer(player2)
-howGoodIsThatPlayer(player3)
+howGoodIsThatPlayer(player1);
+howGoodIsThatPlayer(player2);
+howGoodIsThatPlayer(player3);
