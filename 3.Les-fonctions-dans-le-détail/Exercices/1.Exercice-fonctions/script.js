@@ -9,6 +9,13 @@
     Écrivez cette fonction sous la forme d'une fonction fléchée puis commentez-là et écrivez-là sous la forme d'une fonction classique.  
 */
 
+// const dividedBy10 = number => number/10;
+console.log(dividedBy10(1000));
+
+function dividedBy10(number) {
+  
+  return number/10;
+}
 
 
 /* 
@@ -22,7 +29,12 @@
 const weather = {
   city: "London",
   temp: 16,
+  getFahrenheit: function() {
+    return (this.temp * 1.8) + 32;
+  } 
 }
+
+console.log(weather.getFahrenheit());
 
 
 
@@ -58,3 +70,14 @@ const travelers = [
 ]
 
 
+function areFromNationality(arr, callback) {
+  
+  for(const traveler of arr)
+
+    if(!callback(traveler)) {
+      return false;
+    } 
+    return true;
+}
+
+console.log(areFromNationality(travelers, traveler => traveler.nationality === "FR"));
