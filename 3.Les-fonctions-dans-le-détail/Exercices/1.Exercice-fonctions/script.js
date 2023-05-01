@@ -81,3 +81,34 @@ function areFromNationality(arr, callback) {
 }
 
 console.log(areFromNationality(travelers, traveler => traveler.nationality === "FR"));
+console.log(areFromNationality(travelers, traveler => traveler.nationality === "IT"));
+console.log(areFromNationality(travelers, traveler => traveler.nationality === "EN"));
+
+
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+const areAllEven = numbers.every(num => num % 2 === 0);
+
+console.log(areAllEven); // Renvoie false, car 1 n'est pas pair
+
+
+const numbers2 = [1, 2, 3, 4, 5];
+
+const evenNumbers = numbers2.filter(num => num % 2 === 0);
+
+console.log(evenNumbers); // Renvoie [2, 4]
+
+
+const numbers3 = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers3.map(num => num * 2);
+
+console.log(doubledNumbers); // Renvoie [2, 4, 6, 8, 10]
+
+const numbers4 = [1, 2, 3, 4, 5];
+
+const sum = numbers4.reduce((acc, num) => acc + num, 0);
+
+console.log(sum); // Renvoie 15
