@@ -6,10 +6,41 @@
     Cela ouvre la voie à de nombreuses solutions et à une plus grande fléxibilité.
 */
 
+
+function operation(a, b, operator) {
+    return operator(a, b);
+  }
+  
+  function add(a, b) {
+    return a + b;
+  }
+  
+  let result = operation(2, 3, add); // Renvoie 5
+  console.log(result);
+
+
+
+
 // codons une fonction .filter() personnalisée
 
 
 const salaries = [1200,5000,4000,2500,3450,1800]
+
+function customFilter(arr, callback) {
+    
+    const filteredArray = []; 
+
+    for(const value of arr) {
+
+        if(callback(value)) {
+            filteredArray.push(value);
+        }
+    }
+return filteredArray;
+}
+
+console.log(customFilter(salaries, salary => salary > 1000));
+console.log(customFilter(salaries, salary => salary > 3000));
 
 
 const countries = [
@@ -35,6 +66,7 @@ const countries = [
     },
 ]
 
+console.log(customFilter(countries, country => country.gdp > 400));
 
 // Exemple avec un composant d'ordre supérieur
 
