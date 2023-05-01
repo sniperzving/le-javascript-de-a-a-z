@@ -7,4 +7,22 @@
 */
 
 
+const athlete = {
+    name: "Tom",
+    jump: () => {
+        console.log("Jump");
+        console.log(this);
+    }, 
+    swim: function () {
+        console.log("Swim");
+        console.log(this);
+    }, 
+    run() {
+        console.log("Run");
+        console.log(this);
+    }
+}
 
+athlete.jump();
+athlete.swim();
+athlete.run();
