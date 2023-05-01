@@ -1,4 +1,4 @@
-/* 
+ /* 
     1. La récursion.
 
     La récursion est le comportement d'une fonction qui s'appelle elle-même.
