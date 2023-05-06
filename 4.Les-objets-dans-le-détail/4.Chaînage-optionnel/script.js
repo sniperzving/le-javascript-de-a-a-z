@@ -19,3 +19,9 @@ const store = {
     return 20
   }
 }
+
+console.log(store.dairyProducts.cheeses[1]);
+console.log(store.dairyProducts.iceCreams?.chococateCreams?.[3]);
+
+console.log(store.getPrice?.());
+console.log(store.getQuantity?.());
