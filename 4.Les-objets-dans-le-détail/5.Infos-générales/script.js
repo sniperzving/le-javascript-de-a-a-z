@@ -6,17 +6,20 @@
 
 const city = {
   name: "Bratislava",
-  population: 424000
-}
+  population: 424000,
+};
 
+console.log(city);
 
+delete city.name;
 
-
+console.log(city);
 
 /* Attention, utiliser delete avec la propriété d'un tableau va remplacer l'élément supprimé par un élément empty */
 
-
-
+const arr = [1, 2, 3];
+delete arr[0];
+console.log(arr);
 
 /* 
     2. Bracket et dot notation.
@@ -35,9 +38,16 @@ const city = {
 
 const dog = {
   name: "Riki",
-  legs: 4
-}
+  legs: 4,
+  10: 999,
+};
 
+const propName = "name";
+
+console.log(dog.name);
+// console.log(dog.1); // Erreur
+console.log(dog[10]);
+console.log(dog[propName]);
 
 /* 
     3. Form raccourcie des méthodes.
@@ -45,6 +55,19 @@ const dog = {
     On peut utiliser des fonctions classiques et les fonctions fléchées dans les objets, voyons ensemble les différentes syntaxes.
 */
 
+const robot = {
+  // Fonction classique
+  aim: function () {
+    console.log("Aiming");
+  },
+  // Fonction classique racourcie (2015+)
+  shoot() {
+    console.log("Bang");
+  },
+  run: () => {
+    console.log("Running");
+  },
+};
 
 
 
@@ -67,9 +90,16 @@ const dog = {
 
 */
 
-const fruits = ["🍓","🍌","🍇"]
+const fruits = ["🍓", "🍌", "🍇"];
 
-
+console.log(fruits);
+console.log(typeof fruits);
+console.log(fruits);
+console.log(fruits[1], fruits["1"]);
+fruits.test = "test";
+console.log(fruits);
+console.log(typeof fruits.test);
+console.log(fruits.indexOf("🍓"));
 
 
 /* 
@@ -80,3 +110,12 @@ const fruits = ["🍓","🍌","🍇"]
 
 */
 
+function foo() {
+  console.log("hello");
+}
+
+console.log(typeof foo);
+console.dir(foo);
+foo.customProp = "customProp";
+
+console.dir(foo);
