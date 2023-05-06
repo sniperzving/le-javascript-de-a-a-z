@@ -1,5 +1,5 @@
 /* 
-    1. Array.prototype.reduce(callback(accumulator, currentValue, currentIndex, array), valeurInitiale)
+    1. Array.prototype.reduce(callback(accumulator, currentValue, currentIndex, array), initialValue)
 
     Définition: Accumule chaque valeur d'un tableau à une valeur initiale.
     Si une valeur initiale n'est pas fournie, le premier élément du tableau est utilisé.
@@ -12,6 +12,21 @@
 */
 
 const marks = [18,5,17,12,20,16,14]
+
+const sum = marks.reduce((acc, mark) => acc+mark, 0);
+console.log(sum);
+
+const numberss = [1, 2, 3, 4, 5];
+
+const result = numberss.reduce((accumulator, currentValue, index, array) => {
+  console.log(`accumulator: ${accumulator}`);
+  console.log(`currentValue: ${currentValue}`);
+  console.log(`index: ${index}`);
+  console.log(`array: ${array}`);
+  return accumulator + currentValue;
+}, 0);
+
+console.log(result);
 
 
 /* 
@@ -39,9 +54,16 @@ const marks = [18,5,17,12,20,16,14]
 
 const letters = ["z","b","a","d","e"];
 
+letters.sort();
+console.log(letters);
+
 
 const numbers = [10,55,2,250,500,85]
 
+numbers.sort((a, b) => a-b); // ordre croissant
+console.log(numbers);
+numbers.sort((a, b) => b-a); // ordre décroissant
+console.log(numbers);
 
 // On peut aussi trier des tableaux d'objets
 const store = [
@@ -59,3 +81,7 @@ const store = [
     },
 ]
 
+store.sort((a, b) => a.price - b.price)  // ordre croissant
+console.log(store);
+store.sort((a, b) => b.price - a.price)  // ordre croissant
+console.log(store);
