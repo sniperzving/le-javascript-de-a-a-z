@@ -15,9 +15,18 @@ const animals = ["cat", "dog", "elephant", "lion", "peacock"]
 
 /* Avec une boucle for */ 
 
-
+for (let index = 0; index < animals.length; index++) {
+    const elemlogent = animals[index];
+    console.log(elemlogent);
+}
 /* Avec une boucle for...of */
 
-
+for (const iterator of animals) {
+    console.log(iterator);
+}
 
 /* Avec .forEach */
+
+console.log(animals.forEach((animal, index, array) => console.log(animal, index, array)));
+
+
