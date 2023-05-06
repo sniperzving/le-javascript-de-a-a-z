@@ -10,6 +10,8 @@
 
 const numbers = [1,2,3]
 
+numbers.pop();
+console.log(numbers);
 
 /* 
     Array.prototype.shift()
@@ -17,7 +19,8 @@ const numbers = [1,2,3]
     Celle-ci supprime le premier élément d'un tableau.
 */
 
-
+numbers.shift();
+console.log(numbers);
 
 
 /* 
@@ -26,12 +29,17 @@ const numbers = [1,2,3]
     Rajoute les arguments qu'on lui passe au début d'un tableau.
 */
 
+numbers.unshift(1);
+console.log(numbers);
 
 /* 
     Array.prototype.push(element1, element2, ...)
 
     Cette méthode rajoute les arguments qu'on lui passe à la fin d'un tableau.
 */
+
+numbers.push(3);
+console.log(numbers);
 
 
 
@@ -42,13 +50,18 @@ const numbers = [1,2,3]
 
 */
 
-// Connaître la longueur du tableau (nb d'éléments)
 
+// Connaître la longueur du tableau (nb d'éléments)
+console.log(numbers.length);
 
 // Pour sélectionner le dernier élément.
-
+console.log(numbers[numbers.length-1]);
 
 // Raccourcir un tableau
-
+numbers.length = 1;
+console.log(numbers);
 
 // suppresion de tous les éléments
+
+numbers.length = 0;
+console.log(numbers);
