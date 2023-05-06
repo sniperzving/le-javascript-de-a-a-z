@@ -9,6 +9,7 @@
 */
 
 const cats = ["Poppy", "Misty", "Luna", "Lily", "Titi"];
+console.log(cats.indexOf("Luna"));
 
 
 /* 
@@ -36,7 +37,7 @@ const germanCities = [
     },
 ]
 
-
+console.log(germanCities.findIndex((city) => city.population > 3));
 
 /* 
     3. Array.prototype.includes(value)
@@ -44,7 +45,7 @@ const germanCities = [
     Retourne true ou false en fonction de la présence de l'argument fourni.
 */
 
-
+console.log(cats.includes("Lily"));
 
 /* 
     4. Array.prototype.some(callback(element, index, array))
@@ -75,6 +76,7 @@ const employees = [
     }
 ]
 
+console.log(employees.some(employee => employee.age > 45));
 
 /* 
     5. Array.prototype.every(callback(element, index, array))
@@ -85,6 +87,7 @@ const employees = [
 
 const weights = [60,45,99,75,85,77,105];
 
+console.log(weights.every(weight => weight > 30));
 
 
 /*
@@ -115,3 +118,4 @@ const weights = [60,45,99,75,85,77,105];
         },
     ]
 
+console.log(users.find(el => el.id === 3));
