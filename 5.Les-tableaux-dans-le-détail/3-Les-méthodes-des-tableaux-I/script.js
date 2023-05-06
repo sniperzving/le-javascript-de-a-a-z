@@ -13,6 +13,8 @@
     Découvrons ensemble les principales méthodes des tableaux.
 */
 
+
+
 /* 
     1. Array.prototype.forEach(callback(element, index, array))
 
@@ -27,9 +29,9 @@
 
 const numbers = [1,2,3,4,5,6]
 
+numbers.forEach((el, index) => numbers[index] = el*2)
 
-
-
+console.log(numbers);
 /* 
     2. Array.prototype.map(callback(element, index, array))
     
@@ -55,11 +57,13 @@ const people = [
   }
 ]
 
+const names = people.map(people => people.name)
+console.log(names);
 
 /* 
     3. Array.prototype.filter(callback(el, index, array))
 
-    Valeur de retour : Un tableau contenant les éléments ayant passés le test de la retour de la fonction callback.
+    Valeur de retour : Un tableau contenant les éléments ayant passés le test du retour de la fonction callback.
     Si la fonction retourne true, on garde l'élément dans le tableau retourné, sinon on l'ignore.
 
     Permet de filtrer les éléments d'un tableau.
@@ -67,3 +71,6 @@ const people = [
 
 const heights = [170,185,198,162,187,155,178,207,201,189]
 
+const above180 = heights.filter(height => height > 180)
+
+console.log(above180);
