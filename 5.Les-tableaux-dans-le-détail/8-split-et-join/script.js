@@ -10,6 +10,8 @@
 
 let string = "abc def ijk";
 
+console.log(string.split(""));
+
 
 /* 
     2. .join(separator)
@@ -18,3 +20,9 @@ let string = "abc def ijk";
 */
 
 let arr = ["a","b","c"];
+
+console.log(arr.join(""));
+
+// Inverser une chaîne de caratères
+let test = "abcdf";
+console.log(test.split("").reverse().join(""));
