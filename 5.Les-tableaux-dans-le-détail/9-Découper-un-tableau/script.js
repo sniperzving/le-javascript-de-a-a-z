@@ -15,7 +15,9 @@
 
 const fruits  = ["🍓","🍑","🍇","🍊","🍒"];
 
-
+const deletedElements = fruits.splice(0, 2, "🍑");
+console.log(fruits);
+console.log(deletedElements);
 
 /* 
     1. Array.prototype.slice(start,end)
@@ -26,3 +28,8 @@ const fruits  = ["🍓","🍑","🍇","🍊","🍒"];
 */
 
 const fruits2  = ["🍓","🍑","🍇","🍊","🍒"];
+
+console.log(fruits2);
+const deletedElements2 = fruits2.slice(1, 3);
+console.log(fruits2);
+console.log(deletedElements2);
