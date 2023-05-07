@@ -38,6 +38,9 @@ const companies = [
   },
 ]
 
+const filteredCompanies = companies.filter(company => company.revenue > 500);
+console.log(filteredCompanies);
+
 
 
 
@@ -50,6 +53,8 @@ const companies = [
 
 const values = ["", undefined, "a", "a", 99, 0, true, false, 5, 5, 5];
 
+const truthyValues = values.filter(val => val)
+console.log(truthyValues);
 
 /* 
     C. Nom de nom.
@@ -59,3 +64,5 @@ const values = ["", undefined, "a", "a", 99, 0, true, false, 5, 5, 5];
 
 const names = ["Adrien", "Paul", "Victor", "Alexandre", "Aurélie", "Antoine"];
 
+const filteredNames = names.filter(nam => nam.startsWith("A") && nam.length >= 5);
+console.log(filteredNames);
