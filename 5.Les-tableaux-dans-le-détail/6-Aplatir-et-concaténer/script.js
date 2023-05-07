@@ -10,7 +10,13 @@
 const mathClassoomMarks = [10,12,18,20,8,17]
 const englishClassoomMarks = [5,10,12,14,18,17]
 
+const mergedMarks = mathClassoomMarks.concat(englishClassoomMarks);
+console.log(mergedMarks);
 
+
+
+const mean  = mergedMarks.reduce((acc, index) => acc+index , 0)
+console.log(mean);
 
 /* 
     2. Array.prototype.flat(depth)
@@ -23,3 +29,5 @@ const englishClassoomMarks = [5,10,12,14,18,17]
 */
 
 const arr = [1,2,3,[1,2,3,[1,2,3]]]
+console.log(arr);
+console.log(arr.flat(2)); // niveau d'imbrication
