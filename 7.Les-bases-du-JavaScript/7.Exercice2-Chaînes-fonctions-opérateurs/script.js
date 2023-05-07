@@ -16,6 +16,9 @@ console.log(multiplie(2));
 // let solde = 150 000; FAUX
 // solde += 50 0000 FAUX
 
+let solde = 150000;
+solde += 50000;
+
 
 // Ce code permet d'assigner la valeur 50 000 à solde
 // Faux
@@ -26,8 +29,13 @@ console.log(resultat);
 // result est égal à 5
 // FAUX
 
-let str = `J'ai besoin de $(nbPneus) pour ma voiture`;
-console.log(str);
+// let str = `J'ai besoin de $(nbPneus) pour ma voiture`;
+// console.log(str);
 
 // C'est la bonne façon d'intégrer une expression dans une chaîne
 // FAUX
+
+const nbPneus = 4;
+const str = `J'ai besoin de ${nbPneus} pour ma voiture`;
+
+console.log(str);
