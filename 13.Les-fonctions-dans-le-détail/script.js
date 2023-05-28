@@ -87,3 +87,22 @@ function tabPlus(arr, callBack) {
 }
 
 console.log(tabPlus([1, 2, 3, 4, 5, 6, 7, 8, 9], (el)=> el+1));
+
+let xx = 2;
+
+// Fonction impure
+const add11 = (y) => x += y;
+console.log(add1(5));
+console.log(add1(5));
+console.log(add1(5));
+
+// Fonction pure
+const add22 = (a,b) => a+b;
+console.log(add2(2, 3));
+
+
+const tab1 = [1, 2, 3];
+
+tab.forEach(a => console.log(a));
+
+
