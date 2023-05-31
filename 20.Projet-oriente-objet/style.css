@@ -1,4 +1,5 @@
-::before, ::after {
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,10 +8,68 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    background: #f1f1f1;
 }
 
-li {
-   margin: 10px;
-    padding: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, blue, 0.5);
+.success,
+.error {
+
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+input {
+    display: block;
+    padding: 20px;
+    width: 40%;
+    min-width: 350px;
+    margin: 0 auto;
+}
+
+.inputs {
+    margin: 40px;
+}
+
+button {
+    background: #040466;
+    color: white;
+    padding: 20px 50px;
+    font-size: 18px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    width: 33%;
+}
+
+td {
+ text-align: center;   
 }
