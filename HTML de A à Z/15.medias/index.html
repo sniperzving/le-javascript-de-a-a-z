@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- AUDIOS -->
+    <!-- control = pour rajouter les contrôleurs -->
+    <!-- autoplay = pour une lecture automatique  -->
+    <!-- loop = pour une lecture en boucle -->
+
+    <audio src="./src/audios/file_example_MP3_1MG.mp3" controls loop></audio>
+
+    <br /><br />
+
+    <!-- VIDEOS -->
+    <!-- control = pour rajouter les contrôleurs -->
+    <!-- autoplay = pour une lecture automatique  -->
+    <!-- loop = pour une lecture en boucle -->
+    <!-- poster = ajoute une image de couverture à la vidéo -->
+    <!-- muted = couper le son -->
+    <video
+      src="./src/videos/file_example_MP4_480_1_5MG.mp4"
+      poster="./src/images/cat.jpg"
+      controls
+      loop
+      muted
+    ></video>
+
+    <br /><br />
+
+    <img src="./src/images/cat.jpg" alt="chat qui regarde" />
+
+    <br /><br />
+
+    <figure>
+      <picture>
+        <source
+          media="(min-width : 992px)"
+          srcset="./src/images/cat_1200x400.jpg"
+          type="image/jpg"
+        />
+        <source
+        media="(min-width : 640px)"
+        srcset="./src/images/cat_800x400.jpg"
+        type="image/jpg"
+      />
+      <img src="./src/images/cat.jpg" alt="">
+      <figcaption>Je suis une description</figcaption>
+      </picture>
+    </figure>
+  </body>
+</html>
