@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <!-- Créer un formulaire de contact avec un champ de saisi pour le : nom, prenom, mail, telephone. Une selectbox avec les options html, css, javascript. Un champs de message avec un bouton d'envoi. N'oubliez pas de lier les labels et les inputs-->
+
+    <form action="" method="POST">
+      <label for="nom">Nom : </label>
+      <input
+        type="text"
+        id="nom"
+        placeholder="Veuillez indiquer votre nom"
+        required
+      />
+      <br /><br />
+
+      <label for="prenom">Prénom : </label>
+      <input
+        type="text"
+        id="prenom"
+        placeholder="Veuillez indiquer votre prénom"
+        required
+      />
+      <br /><br />
+
+      <label for="mail">Email : </label>
+      <input
+        type="email"
+        id="mail"
+        placeholder="Veuillez indiquer votre email"
+        required
+      />
+      <br /><br />
+
+      <label for="">langage : </label>
+      <select name="langage" id="">
+        <option value="html" checked="true">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JAVASCRIPT</option>
+      </select>
+      <br /><br />
+
+      <label for="message">Message : </label>
+      <br />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <br /><br />
+
+      <button type="submit">Bouton d'envoi</button>
+    </form>
+  </body>
+</html>
