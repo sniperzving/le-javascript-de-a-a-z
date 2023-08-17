@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>Bonjour</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime libero
+      repellat odio fugit debitis! Nisi optio quos iusto blanditiis quasi, iure
+      quis fugit expedita porro ipsam natus maxime tenetur molestias, veritatis,
+      odit laborum nihil. Officiis, odio laboriosam, provident dolorum aliquid
+      vero ducimus distinctio blanditiis corporis voluptates veritatis? Tenetur,
+      labore sint.
+    </p>
+
+    <ul class="list">
+      <ul></ul>
+      <ul></ul>
+      <ul></ul>
+    </ul>
+
+    <div id="container"></div>
+
+    <!-- .container -->
+    <div class="container"></div>
+    <div class="cont box" id="numb"></div>
+    <h1>Je suis un titre</h1>
+    <h2 class="title">Je suis un titre</h2>
+
+    <!-- Imbrication -->
+    <ol class="list-items">
+      <li class="item">Item</li>
+      <li class="item">Item</li>
+      <li class="item">Item</li>
+      <li class="item">Item</li>
+    </ol>
+
+    <!-- div>p+ul>li*2 -->
+    <div>
+        <p></p>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+<!-- $ indexer - ul.list>li.item.item${Item $}*5 -->
+    <ul class="list">
+        <li class="item item1">Item 1</li>
+        <li class="item item2">Item 2</li>
+        <li class="item item3">Item 3</li>
+        <li class="item item4">Item 4</li>
+        <li class="item item5">Item 5</li>
+    </ul>
+
+    <!-- ^ Monter un étage - div>h1{Bonjour}^p{HelloWorld} -->
+    <div>
+        <h1>Bonjour</h1>
+    </div>
+    <p>HelloWorld</p>
+
+
+    <!-- ()     section>(header>div>ul>li*2)+footer>p{Je suis un footer} - Créer des groupes d'éléments -->
+    <section>
+        <header>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </header>
+        <footer>
+            <p>Je suis un footer</p>
+        </footer>
+    </section>
+
+<!--     section>(header>nav+p)+(footer>form>input+button{Bouton})^hr -->
+    <section>
+        <header>
+            <nav></nav>
+            <p></p>
+        </header>
+        <footer>
+            <form action=""><input type="text"><button>Bouton</button></form>
+        </footer>
+    </section>
+    <hr>
+
+    <!-- [] -->
+    <a href="https://www.google.fr" target="_blank">Lien vers Google</a>
+
+  </body>
+</html>
