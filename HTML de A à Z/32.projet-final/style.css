@@ -1,0 +1,86 @@
+/* Réinitialisation des marges, rembourrages et box-sizing */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles globaux pour le corps du document */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Police de caractères */
+  padding: 7rem 1rem; /* Espace de remplissage haut et bas de la page */
+}
+
+/* Styles pour la barre de navigation */
+nav {
+  width: 100%; /* Largeur de 100% */
+  height: 80px; /* Hauteur de la barre de navigation */
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3); /* Ombre de la boîte */
+  background: #f1f1f1; /* Couleur de fond */
+  display: flex; /* Affichage en mode flex */
+  justify-content: center; /* Centrage horizontal du contenu */
+  align-items: center; /* Centrage vertical du contenu */
+  position: fixed; /* Position fixe */
+  top: 0; /* Position en haut */
+  left: 0; /* Position à gauche */
+}
+
+/* Styles pour la liste non ordonnée à l'intérieur de la barre de navigation */
+nav ul {
+  display: flex; /* Affichage en mode flex */
+  list-style: none; /* Suppression des puces de liste */
+}
+
+/* Styles pour chaque élément de liste dans la barre de navigation */
+nav ul li {
+  margin: 0 1rem; /* Marges horizontales */
+}
+
+/* Styles pour les liens à l'intérieur des éléments de liste de la barre de navigation */
+nav ul li a {
+  text-decoration: none; /* Pas de soulignement du texte */
+  font-weight: bold; /* Épaisseur de police en gras */
+  color: #333; /* Couleur du texte */
+}
+
+/* Styles pour les titres de niveau 1 */
+h1 {
+  color: crimson; /* Couleur du texte en rouge foncé */
+  text-align: center; /* Centrage du texte */
+  margin-bottom: 1rem; /* Marge inférieure */
+}
+
+/* Styles pour la ligne horizontale */
+hr {
+  border: none; /* Pas de bordure */
+  max-width: 500px; /* Largeur maximale */
+  height: 1px; /* Hauteur */
+  background: crimson; /* Couleur de fond en rouge foncé */
+  margin: 0 auto; /* Marge horizontale automatique (centrée) */
+  margin-bottom: 1rem; /* Marge inférieure */
+}
+
+/* Styles pour les listes ordonnées */
+ol {
+  display: flex; /* Affichage en mode flex */
+  justify-content: center; /* Centrage horizontal du contenu */
+  align-items: center; /* Centrage vertical du contenu */
+  flex-direction: column; /* Direction de la colonne */
+}
+
+/* Styles pour les paragraphes, titres de niveau 2 et légendes des figures */
+p,
+h2,
+figcaption {
+  text-align: center; /* Centrage du texte */
+  margin: 1rem 0; /* Marges verticales */
+}
+
+/* Styles pour les images et éléments audio */
+img,
+audio {
+  display: block; /* Affichage en mode bloc */
+  margin: 2rem auto; /* Marges verticale et horizontale automatiques (centrées) */
+}
