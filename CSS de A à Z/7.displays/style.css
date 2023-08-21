@@ -26,4 +26,6 @@ h1 {
     display: inline-flex;
     display: inline-grid;
     display: inline-table;
+
+    display: inherit;
 }
