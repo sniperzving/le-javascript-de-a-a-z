@@ -1,0 +1,20 @@
+
+/* les éléments block acceptent les width et height */
+p {
+    width: 450px;
+    height: 450px;
+    background-color: salmon;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+/* les éléments inline n'acceptent pas les margin-top, marging-bottom,  width et height */
+span {
+    width: 450px;
+    height: 450px;
+    background-color: orange;
+    padding: 50px 45px 55px 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
