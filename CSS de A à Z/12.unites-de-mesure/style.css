@@ -1,0 +1,23 @@
+/* Changer le font-size de base du navigateur */
+
+:root {
+    font-size: 10px;
+}
+
+
+.box {
+    padding: 10px;
+    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    font-size: 10px;
+}
+
+p {
+    /* 2x16 pixels */
+    /* font-size: 2rem; */
+
+    /* em fait référnce au parent */
+    font-size: 2em;
+
+}
