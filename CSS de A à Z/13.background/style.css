@@ -1,0 +1,20 @@
+.box {
+    width: 100%;
+    height: 100vh;
+
+    background-color: red;
+
+    /* Appliquer une image de fond */
+    /* background-image: url(./src/image-400x400.jpg);
+    /* gérer la position de notre fond */
+    /* background-position: center;
+    /* taille du fond */
+    /* background-size: cover; */
+    /* répétition du fond */
+    /* background-repeat: no-repeat; */
+    
+    /* prioriété raccourcis */
+    background: no-repeat center / cover url(./src/image-400x400.jpg);
+
+    background-attachment: fixed;
+}
