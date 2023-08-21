@@ -1,0 +1,35 @@
+p {
+    /* couleur */
+    color: #f1f1f1;
+    /* fond */
+    background-color: crimson;
+    /* hauteur de ligne */
+    line-height: 1.2;
+    /* style */
+    font-style: italic;
+    /* gras */
+    font-weight: 300;
+    /* taille */
+    font-size: 25px;
+    /* famille d'écriture */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* font = propriété raccourcis  */
+    /* font-style - font-weight - font-size - line-weight */
+    font: italic 700 10px / 2 sans-serif;
+
+    /* Alignement */
+    text-align: center;
+    /* décoration de text */
+    text-decoration: underline;
+    /* Evite de retourner à la ligne */
+    white-space: nowrap;
+    /* Transformation du texte */
+    text-transform: capitalize;
+    /* Espace entre les lettres */
+    letter-spacing: 1px;
+
+    font-family: 'Tilt Prism', cursive;
+
+
+}
