@@ -1,0 +1,51 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: salmon;
+
+    /* margin */
+    /*   margin-top: 55px;
+    margin-right: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; */
+
+    /* applique la marge sur tous les côtés */
+    margin: 20px;
+
+    /* Applique la parge sur les côtés haut/bas et droite/gauche */
+    margin: 20px 20px;
+
+    /* Haut  Droite/Gauche Bas */
+    margin: 30px 25px 10px;
+
+    /* Haut Droite Bas Gauche */
+    margin: 15px 25 px 35px 15px;
+
+
+    /* PADDING */
+    /* padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px; */
+
+
+        /* applique la marge sur tous les côtés */
+        padding: 20px;
+
+        /* Applique la parge sur les côtés haut/bas et droite/gauche */
+        padding: 20px 20px;
+    
+        /* Haut  Droite/Gauche Bas */
+        padding: 30px 25px 10px;
+    
+        /* Haut Droite Bas Gauche */
+        padding: 15px 25 px 35px 15px;
+    
+
+}
+
+.box2 {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
