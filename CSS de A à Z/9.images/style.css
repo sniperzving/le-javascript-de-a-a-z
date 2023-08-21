@@ -1,0 +1,16 @@
+.box {
+    max-width: 750px;
+    width: 100%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
