@@ -1,0 +1,26 @@
+body {
+
+  --color: red;
+  --pad: 20px 50px;
+  --marge: 20px;
+  --fam: "Arial", sans-serif;
+  --taille: 20px;
+  --w: 250px;
+  --h: 150px;
+}
+
+p {
+
+  color: var(--color);
+  padding: var(--pad);
+  margin: var(--marge);
+  font-family: var(--fam);
+  font-size: var(--taille);
+}
+
+.box {
+
+  background-color: #333;
+  width: var(--w);
+  height: var(--h);
+}
