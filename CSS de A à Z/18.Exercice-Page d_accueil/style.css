@@ -1,0 +1,51 @@
+/* reset CSS */
+*, ::before, ::after {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+
+    height: 100vh;
+    --color1: midnightblue;
+    --color2: red;
+}
+
+.accueil-container {
+    height: 100%;
+    background: no-repeat center / cover url('./sources/img01.jpg');
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 80px;
+    color: var(--color1);
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-style: italic;
+    font-size: 25px;
+    color: var(--color2);
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 21px;
+    border-radius: 5px;
+    background: var(--color1);
+    color: #f1f1f1;
+    margin: 10px 5px 5px 0px;
+    text-decoration: none;
+
+}
+
