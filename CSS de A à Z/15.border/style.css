@@ -1,0 +1,44 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+
+
+    /* border */
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+   
+/* Propriété raccourcis */
+    border: 2px solid #333;
+
+/* outline ne peut pas gérer les côtés séparément. C'est border qui le fait */
+
+border-left: 3px solid orange;
+border-right: 3px solid crimson;
+border-top: 3px solid brown;
+border-bottom: 3px solid green;
+
+/* border style  */
+/* border : 3px dashed #333;
+
+border : 3px inset #333;
+border : 3px outset #333;
+border : 3px ridge #333;
+border : 3px groove #333;
+border : 3px double #333; */
+border : 3px dotted #333;
+
+
+/* border radius  - arrondi sur les quatre côtés */
+border-radius: 50px;
+/* 50px sur les côtés haut gauche et bas droit - 100px sur les côtés haut droit et bas gauche */
+border-radius: 50px 100px;
+/* 50px côté haut gauche - 100px côtés haut droit et bas gauche - 70px côté bas droit */
+border-radius: 50px 100px 70px;
+/* 50px haut gauche - 25px haut droit - 75px bas droit - 90px bas gauche */
+border-radius: 50px 25px 75px 90px;
+border-radius: 0% 100% 98% 2% / 51% 43% 57% 49%; 
+
+
+}
