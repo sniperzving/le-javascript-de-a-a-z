@@ -1,0 +1,62 @@
+/* Sélectionne la première ligne */
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+/* selection - Lorsque l'on sélectionne du texte avec la souris */
+p::selection {
+  background-color: violet;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: #333;
+  margin-bottom: 1rem;
+}
+
+
+p::after {
+  content: "APRES";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+
+}
+
+p::before {
+  content: "AVANT";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+}
+
+.box {
+  position: relative;
+}
+
+.box::before {
+  content: "Avant";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box::before {
+  content: "Avant";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
