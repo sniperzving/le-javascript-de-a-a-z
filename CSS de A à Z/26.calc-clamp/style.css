@@ -1,0 +1,16 @@
+/* la fonction calcl permet de faire des calculs pour déterminer la valeur d'une propriété CSS */
+p {
+    font-size: calc(25px+ 2vw - 2px);
+}
+
+.box {
+    width: calc(100% - 80px);
+    height: 200px;
+    background-color: salmon;
+}
+
+.box2 {
+    margin-top: 1rem;
+    /* width: clamp(10px, 4em, 80px); */
+    width: max(100px, min(14px, 80px));
+}
