@@ -1,0 +1,27 @@
+.box {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 2rem;
+    background-color: orange;
+    /* cacher toutc e qui dépasse  */
+    /* overflow: hidden; */
+
+    /* Scroll sur tout le texte à l'intérieur de notre élément Y */
+    overflow:auto;
+
+    /* Scroll sur X et Y */
+    overflow: scroll;
+}
+
+.box2 {
+    width: 500px;
+    height: 250px;
+    border-radius: 40px;
+    background-color: violet;
+    overflow: hidden;
+}
+
+.box2 img {
+    width: 100%;
+    height: auto;
+}
